@@ -12,7 +12,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # 下载
 
-ZIP-适用于Windows32位与64位的可执行应用程序（.exe） SB3-使用Scratch，Kittenblock或Mind+打开的开源文件
+ZIP-适用于Windows32位与64位的可执行应用程序（.exe） SB3-使用Scratch，Kittenblock或Mind+打开的开源文件。
 
 ## Header 2
 
