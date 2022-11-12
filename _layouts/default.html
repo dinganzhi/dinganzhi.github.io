@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title class="i18n" name='title'></title>
+    <meta id="i18n_pagename" content="index-common">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="css/index.css">
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -13,6 +19,28 @@
     {% include head-custom.html %}
   </head>
   <body>
+        <div class="lan">
+        <div class="lan1"><label class="i18n" name="lan"></label></div>
+        <div class="lan2">
+            <select id="language">
+                <option value="zh-CN">中文简体</option>
+                <option value="zh-TW">中文繁體</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div><label class="i18n" name="hellomsg1"></label><label class="i18n" name="hellomsg2"></label></div><br>
+    <div><label class="i18n" name="commonmsg1"></label><label class="i18n" name="commonmsg2"></label></div><br>
+    <div>
+        <input type="search" class="i18n-input" selectname="searchPlaceholder" selectattr="placeholder">
+    </div>
+
+    <script src="js/jquery.js"></script>        
+    <!-- 加载语言包文件 -->
+    <script src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+    <script src="js/language.js"></script>
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
