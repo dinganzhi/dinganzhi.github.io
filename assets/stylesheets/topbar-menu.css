@@ -1,0 +1,113 @@
+/*Dropdown menu*/
+#dropdown-wrapper {
+    float: left;
+}
+#dropdown-btn {
+    color: gray;
+    padding-left: 10px;
+}
+#dropdown-wrapper #dropdown-menu {
+    z-index: 999;
+    min-width: 320px;
+    display: none;
+    position: absolute;
+    left: 5px; margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(250,250,250);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+/*Theme selector*/
+#theme-selector {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: grey;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px grey;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*Vertical Line*/
+.vline {
+  clear: both;
+  width: 60%;
+  margin: 10px auto;
+  border-bottom: 2px solid #E5DCE1;
+}
+
+/*Menu*/
+#dropdown-menu .menu-item {
+  display: block;
+  padding-left: 40px;
+}
+#dropdown-menu .menu-item:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Menu for broswers without javascript */
+.menu-nojs .menu {
+  float: left;
+}
+.menu-nojs .menu-item {
+  padding-left: 40px;
+}
+
+/*Search Box*/
+#search-wrapper {
+  margin-top: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#search-box {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}

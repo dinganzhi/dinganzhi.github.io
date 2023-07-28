@@ -1,18 +1,22 @@
+---
+css:
+    - "assets/stylesheets/main.css"
+ext-css:
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+js:
+    - "assets/scripts/main.js"
+    - "assets/scripts/return-to-top.js"
+ext-js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+---
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-
-  <body>
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    {% include html_includes/head/head.html %}
+    <body>
+        {% include html_includes/head/topbar.html %}
         {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-    
-    {% include foot.html %}
-  </body>
+        {% include html_includes/foot/footer.html %}
+        {% include html_includes/return-to-top.html %}
+    </body>
+    {% include html_includes/foot/scripts.html %}
 </html>

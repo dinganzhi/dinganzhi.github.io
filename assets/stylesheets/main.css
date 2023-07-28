@@ -1,0 +1,86 @@
+---
+layout: null
+---
+
+{% include assets/stylesheets/normalize.css %}
+{% include assets/stylesheets/topbar.css %}
+{% include assets/stylesheets/topbar-menu.css %}
+{% include assets/stylesheets/highlight.css %} /* For code highlighting */
+
+/*Set some default styles*/
+body {
+    background: #fafafa;
+    line-height: 1.4;
+}
+h1, h2, h3, h4, h5 {
+    color: darkslategray;
+}
+a {
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+}
+input, textarea, button {
+    box-sizing: border-box;
+    padding: 10px;
+}
+button, input[type="submit"] {
+    background: rgb(230, 230, 230);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    clear: both;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/*Header img  -  Bigimg*/
+.header {
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 600px;
+    background-size: 100%;
+    overflow: hidden;
+    color: white;
+}
+.header-content {
+    max-width: 1137px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header-content .page-title {
+    text-transform: uppercase;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px #000;
+}
+.header .post-meta {
+    line-height: 1.5;
+    font-weight: bold;
+}
+.white-text {
+    color: white;
+}
+/*Content box*/
+.container {
+    max-width: 1137px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Code box*/
+.highlighter-rouge {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

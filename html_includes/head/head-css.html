@@ -1,0 +1,29 @@
+{% if layout.common-googlefonts %}
+{% for font in layout.common-googlefonts %}
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+{% endfor %}
+{% endif %}
+
+{% if layout.css %}
+{% for css in layout.css %}
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ css }}" />
+{% endfor %}
+{% endif %}
+
+{% if layout.ext-css %}
+{% for css in layout.ext-css %}
+    <link rel="stylesheet" href="{{ css }}" />
+{% endfor %}
+{% endif %}
+
+{% if page.css %}
+{% for css in page.css %}
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ css }}" />
+{% endfor %}
+{% endif %}
+
+{% if page.ext-css %}
+{% for css in page.ext-css %}
+    <link rel="stylesheet" href="{{ css }}" />
+{% endfor %}
+{% endif %}

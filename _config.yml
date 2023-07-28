@@ -1,64 +1,35 @@
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Welcome to beNice17 - A Simple Jekyll theme by Viet Anh Nguyen
+# Website: vietanhdev.com
 
-title: Bay Jekyll Theme
-description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
-baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
-og_image: /assets/img/profile-pic.jpg
-google_analytics: "UA-121636368-3"
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: beNice17 theme # Title of your Website. Eg: Viet Anh's Website
+email: beNice17@vietanhdev.com # Your email
+contact-email: beNice17@vietanhdev.com # Email for contact page. Can be your email.
+author: Viet Anh Nguyen
+description: > # this means to ignore newlines until "baseurl:"
+  beNice17 is a Jekyll theme. Suitable for personal Websites & Blogs.
+url: "https://vietanhdev.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/beNice17" # the subpath of your site, e.g. /blog
 
-header:
-  pages:
-    - name: Home
-      slug: /
-    - name: Work
-    - name: Blog
+includes_dir: .
 
-footer:
-  show_powered_by: true
-  contact:
-    - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+# Sharing settings
+shareimg: assets/images/sharing-imgs/beNice17.jpg # default sharing img
+bigimg: images/patterns/triangular.png # default big img (header image(s))
+fb_app_id: 12345 # Facebook app id
+
+timezone: "+0700"
+permalink: posts/:title.html
 
 # Build settings
 markdown: kramdown
-sass:
-    style: :compressed
 plugins:
   - jekyll-feed
-
-# Excluded items
+  - jekyll-redirect-from
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - feed.xml
-  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Used for defeating caching
-version: 1

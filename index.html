@@ -1,0 +1,42 @@
+---
+layout: page
+js:
+  - "assets/scripts/homepage.js"
+meta-description: "beNice17 is a Jekyll theme. Suitable for personal Websites & Blogs."
+---
+<img src="assets/images/homepage.png" alt="Homepage icon" style="margin: 0 auto; display: block">
+<h2 style="text-align: center">Fork this theme: <a href="https://github.com/vietanhdev/beNice17">https://github.com/vietanhdev/beNice17</a></h2>
+
+<div class="hello-world">
+
+	<img src="assets/images/language-flags/uk.png" style="float: right;" onclick="$('*[verlang=vi]').hide(); $('*[verlang=en]').show();">
+	<img src="assets/images/language-flags/vn.png" style="float: right;" onclick="$('*[verlang=en]').hide(); $('*[verlang=vi]').show();">
+
+	<br>
+
+	<h2 verlang="en">Hi!</h2>
+	<p verlang="en">I'm Viet Anh. I'm a student, I love programming and have passion for technology. I am currently focusing on developing and managing Websites and Web applications.</p>
+	<p verlang="en">I created this website as a place for sharing my knowledge and experiences I've gained in my study, my work and my life. Nice to meet you all!</p>
+
+
+	<h2 verlang="vi">Chào bạn!</h2>
+	<p verlang="vi">Tôi là Việt Anh. Tôi đang là sinh viên, yêu lập trình, thích tìm hiểu các công nghệ mới. Hiện tại tôi đang tập trung vào phát triển và quản lí các Website và các phần mềm dựa trên nền tảng Web.</p>
+	<p verlang="vi">Tôi tạo Website này như là nơi tôi chia sẻ các kiến thức, kinh nghiệm đã thu được trong học tập, công việc và cuộc sống. Rất vui được làm quen với tất cả mọi người!</p>
+
+	<h2 verlang="en">Contact Info</h2>
+	<h2 verlang="vi">Thông tin liên hệ</h2>
+	<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+	<b>Github:</b> <a href="https://github.com/vietanhdev">https://github.com/vietanhdev</a><br><br>
+
+	<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+	<b>Email:</b> <a href="mailto:vietanh@vietanhdev.com">vietanh@vietanhdev.com</a><br><br>
+
+	<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+	<b>Facebook:</b> <a href="https://fb.com/vietanhdev">fb.com/vietanhdev</a>
+</div>
+
+<h2>Lastest posts on my blog</h2>
+
+{% for post in site.posts limit:5 %}  
+    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span></p>
+{% endfor %}

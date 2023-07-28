@@ -1,0 +1,11 @@
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    clear: both;
+}
+#contact-form input, #contact-form textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#contact-form textarea {
+    height: 200px;
+}

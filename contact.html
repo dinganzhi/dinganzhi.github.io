@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Contact Page"
+subtitle: Send me a message via this page
+css: "assets/stylesheets/contact-page.css"
+js: "assets/scripts/contact-page.js"
+---
+
+<h3>Bạn có thể gửi cho tôi một tin nhắn qua form bên dưới:</h3>
+
+<form id="contact-form" method="POST" action="https://formspree.io/{{ site.contact-email }}">
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="email" name="email" placeholder="Email">
+  <input type="text" name="website" placeholder="Your name / Tên bạn">
+  <textarea name="message" placeholder="Message / Nội dung tin nhắn"></textarea>
+  <input type="submit" class="btn btn-lg btn-primary" value="Send / Gửi đi"></input>
+</form>

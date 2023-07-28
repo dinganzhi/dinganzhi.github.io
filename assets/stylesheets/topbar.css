@@ -1,0 +1,14 @@
+/*Topbar style*/
+#top-bar {
+    padding: 2px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 36px;
+    line-height: 36px;
+    color: gray;
+}
+#site-title {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;
+}

@@ -1,0 +1,61 @@
+---
+layout: page
+title: Search
+subtitle: "Search for posts I've written"
+ext-js:
+   - "lunr.min.js"
+   - "search.js"
+---
+
+<br/>&nbsp;
+
+<div class="container">
+    <form action="get" id="site_search">
+        <div class="input-group">
+            <input id="search_box" type="text" placeholder="type here and enter" />
+            <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+        <ul id="search_results"></ul>
+    </form>
+</div>
+
+&nbsp;
+
+
+<style type="text/css">
+
+#site_search {
+    width: 100%;
+    margin: 0 auto;
+}
+	
+#input-group{
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#search_box{
+    width: 70%;
+    border: solid 1px #E4E4E4;
+    box-shadow: none;
+}
+
+.input-group button{
+    width: 25%;
+    color: gray;
+}
+
+#search_results {
+	margin-top: 10px;
+	background: rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+#search_results, #search_results a {
+	color: #fff;
+	line-height: 2;
+	font-weight: bold;
+}
+</style>
+
