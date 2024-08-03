@@ -1,42 +1,63 @@
----
-layout: page
-js:
-  - "assets/scripts/homepage.js"
-meta-description: "beNice17 is a Jekyll theme. Suitable for personal Websites & Blogs."
----
-<img src="assets/images/homepage.png" alt="Homepage icon" style="margin: 0 auto; display: block">
-<h2 style="text-align: center">Fork this theme: <a href="https://github.com/vietanhdev/beNice17">https://github.com/vietanhdev/beNice17</a></h2>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>dinganzhi的网站[维护]</title>
+        <meta charset="utf-8">
+        
+        <!-- 新 Bootstrap5 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+ 
+        <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+        <script src="https://cdn.staticfile.net/popper.js/2.9.3/umd/popper.min.js"></script>
+ 
+        <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+        <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
 
-<div class="hello-world">
+        <!-- Font Awesome 图标 国内CDN -->
+        <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<img src="assets/images/language-flags/uk.png" style="float: right;" onclick="$('*[verlang=vi]').hide(); $('*[verlang=en]').show();">
-	<img src="assets/images/language-flags/vn.png" style="float: right;" onclick="$('*[verlang=en]').hide(); $('*[verlang=vi]').show();">
+    </head>
+    <body>
+        <div class="alert alert-primary alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>注意！！！</strong> 网站维护中，预计9月1日左右即可开放
+        </div>
 
-	<br>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa fa-hand-o-right"></i>按我了解详细信息<i class="fa fa-hand-o-left"></i>
+        </button>
 
-	<h2 verlang="en">Hi!</h2>
-	<p verlang="en">I'm Viet Anh. I'm a student, I love programming and have passion for technology. I am currently focusing on developing and managing Websites and Web applications.</p>
-	<p verlang="en">I created this website as a place for sharing my knowledge and experiences I've gained in my study, my work and my life. Nice to meet you all!</p>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+          
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">网站维护<i class="fa fa-file-code-o"></i></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    由于本人的“<del>懒</del>”，且作为一个七年级学生，没点时间很正常的嘛 所以网站得等到9月1日(具体还得看我多懒)才能开<br /><br />
+                    且由于Github经常<i>《连接重置》《响应时间过长》《连接超时》</i>，因此网站有可能会换成我同学的服务器(唯一缺点是他那个服务器晚上10点后会断网……)+二级域名<br /><br />
+                    当然githubpages网站如果要换会放出链接的，找不到找我要:D<br /><br />
 
+                    <img src="https://www.bing.com/th/id/OGC.bee3f7332357f509c630c2c977348435?pid=1.7&rurl=https%3a%2f%2fgd-hbimg.huaban.com%2faa3b806bb8d0f1c807d9f44ef0387c8ea01d690a7150e-vLen4M_fw658&ehk=eVN%2fHckYMKzgYwDgAsw4izaRDcQVZrR6x6pFGxlRkTY%3d" /><br /><br />
 
-	<h2 verlang="vi">Chào bạn!</h2>
-	<p verlang="vi">Tôi là Việt Anh. Tôi đang là sinh viên, yêu lập trình, thích tìm hiểu các công nghệ mới. Hiện tại tôi đang tập trung vào phát triển và quản lí các Website và các phần mềm dựa trên nền tảng Web.</p>
-	<p verlang="vi">Tôi tạo Website này như là nơi tôi chia sẻ các kiến thức, kinh nghiệm đã thu được trong học tập, công việc và cuộc sống. Rất vui được làm quen với tất cả mọi người!</p>
+                    bilibili:<a href="https://space.bilibili.com/1852591445">UID:1852591445(扣我传送到个人空间)</a><br />
+                    qq号/群：2218631043(qq号) 群：<a href="https://qm.qq.com/q/kzhUy2k99K">837631347(扣我传送)</a><br />
 
-	<h2 verlang="en">Contact Info</h2>
-	<h2 verlang="vi">Thông tin liên hệ</h2>
-	<i class="fa fa-github fa-lg" aria-hidden="true"></i>
-	<b>Github:</b> <a href="https://github.com/vietanhdev">https://github.com/vietanhdev</a><br><br>
-
-	<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-	<b>Email:</b> <a href="mailto:vietanh@vietanhdev.com">vietanh@vietanhdev.com</a><br><br>
-
-	<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-	<b>Facebook:</b> <a href="https://fb.com/vietanhdev">fb.com/vietanhdev</a>
-</div>
-
-<h2>Lastest posts on my blog</h2>
-
-{% for post in site.posts limit:5 %}  
-    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span></p>
-{% endfor %}
+                    <img src="qrcode.png" />
+                </div>
+          
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">了解</button>
+                </div>
+          
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
